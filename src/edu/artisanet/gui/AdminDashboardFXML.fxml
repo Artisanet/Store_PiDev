@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #212121;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="edu.artisanet.gui.AdminDashboardFXMLController">
+   <children>
+      <HBox prefHeight="110.0" prefWidth="1300.0">
+         <children>
+            <AnchorPane prefHeight="112.0" prefWidth="417.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="21.0" prefHeight="41.0" prefWidth="368.0" text="Admin Dashboard" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma Bold" size="40.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="22.0" layoutY="75.0" prefHeight="12.0" prefWidth="317.0" style="-fx-background-color: #0288d1;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutY="113.0" prefHeight="690.0" prefWidth="284.0">
+         <children>
+            <JFXButton prefHeight="84.0" prefWidth="291.0" text="Gestion des Utilisateurs" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onMouseClicked="#showNews" prefHeight="84.0" prefWidth="291.0" text="Gestion des Actualitées" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="84.0" prefWidth="291.0" text="Gestion des Livraisons" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onMouseClicked="#showRec" prefHeight="84.0" prefWidth="291.0" text="Gestion des Reclamations" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="AdminAnchor" layoutX="289.0" layoutY="110.0" prefHeight="690.0" prefWidth="1012.0" />
+   </children>
+</AnchorPane>

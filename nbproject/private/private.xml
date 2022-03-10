@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/NewsCrud.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/entities/Reclamation.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/MyListener.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/ReclamationCrud.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/AdminRexFXMLController.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/entities/News.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/entities/Vote.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/entities/Commentaire.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/CommentaireCrud.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/JavaMailAPI.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/test/test.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/Crud.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/test/NewFXMain.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/MyListener2.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/utils/DataBase.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/service/VoteCrud.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/PageNewsFXMLController.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/ClientRexFXMLController.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/ClientComFXMLController.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/CommentFXMLController.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/ClientNewsFXMLController.java</file>
+            <file>file:/C:/Users/Bayrem/Documents/NetBeansProjects/JavaApplication1/src/edu/artisanet/gui/NewsFXMLController.java</file>
+        </group>
+    </open-files>
+</project-private>

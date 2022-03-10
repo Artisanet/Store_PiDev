@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchor" prefHeight="810.0" prefWidth="1315.0" style="-fx-background-color: #212121;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.artisanet.gui.ClientComFXMLController">
+   <children>
+      <BorderPane layoutX="7.0" layoutY="7.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="435.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="110.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="CENTER" focusTraversable="false" text="SECTION " textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" focusTraversable="false" layoutX="127.0" layoutY="50.0" text="COMMENTAIRES" textFill="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-radius: 90; -fx-background-color: white;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <JFXTextField focusColor="WHITE" prefHeight="40.0" prefWidth="245.0" promptText="Chercher" style="-fx-background-color: white; -fx-background-radius: 90;" unFocusColor="WHITE">
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Tahoma" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXButton style="-fx-background-color: #0288d1; -fx-background-radius: 90;" text="Chercher">
+                           <font>
+                              <Font name="Tahoma Bold" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="27.0" prefWidth="435.0" />
+                  <VBox fx:id="selectedCom" alignment="TOP_CENTER" prefHeight="535.0" prefWidth="100.0" style="-fx-background-color: white; -fx-background-radius: 50;">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <ImageView fitHeight="65.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/comments.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <HBox prefHeight="36.0" prefWidth="335.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <Label fx:id="nomCom" text="Test : " textFill="#0288d1">
+                           <font>
+                              <Font name="Tahoma Bold" size="26.0" />
+                           </font>
+                        </Label>
+                        <JFXTextArea fx:id="contCom" focusColor="WHITE" prefHeight="224.0" prefWidth="335.0" promptText="comments will display heeere" unFocusColor="WHITE">
+                           <font>
+                              <Font name="Tahoma" size="18.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" right="20.0" top="10.0" />
+                           </padding>
+                        </JFXTextArea>
+                        <HBox alignment="TOP_CENTER" prefHeight="53.0" prefWidth="335.0">
+                           <children>
+                              <ImageView fitHeight="91.0" fitWidth="94.0" onMouseClicked="#like" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets right="30.0" top="15.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../../img/like%20(2).png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="91.0" fitWidth="94.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#dislike" pickOnBounds="true" preserveRatio="true">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="15.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../../img/dislike%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="likes" contentDisplay="TOP" prefHeight="37.0" prefWidth="79.0" text="000" textFill="#0288d1">
+                                 <HBox.margin>
+                                    <Insets right="50.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Tahoma Bold" size="32.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="dislikes" contentDisplay="TOP" layoutX="71.0" layoutY="32.0" prefHeight="37.0" prefWidth="79.0" text="000" textFill="#0288d1">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                     <opaqueInsets>
+                        <Insets top="20.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="65.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="152.0" prefWidth="880.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <VBox prefHeight="152.0" prefWidth="506.0" style="-fx-background-color: white; -fx-background-radius: 30;">
+                           <opaqueInsets>
+                              <Insets right="30.0" />
+                           </opaqueInsets>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="91.0" prefWidth="506.0">
+                                 <children>
+                                    <Label text="Nom : ">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <JFXTextArea fx:id="areaNom" focusColor="TRANSPARENT" prefHeight="33.0" prefWidth="417.0" promptText="Votre nom ici.." unFocusColor="#4d4d4d00">
+                                       <font>
+                                          <Font name="Tahoma" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                    </JFXTextArea>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Commentaire : ">
+                                       <font>
+                                          <Font name="Tahoma Bold" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <JFXTextArea fx:id="areaCon" focusColor="TRANSPARENT" prefHeight="27.0" prefWidth="357.0" promptText="Votre nom ici.." unFocusColor="#4d4d4d00">
+                                       <font>
+                                          <Font name="Tahoma" size="16.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets top="25.0" />
+                                       </HBox.margin>
+                                    </JFXTextArea>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" prefHeight="152.0" prefWidth="177.0">
+                           <opaqueInsets>
+                              <Insets left="20.0" />
+                           </opaqueInsets>
+                           <children>
+                              <JFXButton onAction="#add" style="-fx-background-color: #0288d1; -fx-background-radius: 90;" text="Ajouter" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton layoutX="10.0" layoutY="10.0" onAction="#update" style="-fx-background-color: #0288d1; -fx-background-radius: 90;" text="Modifer" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="10.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton layoutX="10.0" layoutY="49.0" onAction="#delete" style="-fx-background-color: #0288d1; -fx-background-radius: 90;" text="Supprimer" textFill="WHITE">
+                                 <font>
+                                    <Font name="Tahoma Bold" size="20.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <AnchorPane fx:id="anchor1" prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane fx:id="scroll1" layoutY="16.0" prefHeight="570.0" prefWidth="765.0">
+                                 <content>
+                                    <GridPane fx:id="grid1" prefHeight="9.0" prefWidth="27.0">
+                                       <rowConstraints>
+                                          <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
