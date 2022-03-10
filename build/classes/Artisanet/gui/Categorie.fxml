@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="482.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Artisanet.gui.CategorieController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c31a07" height="536.0" layoutX="-5.0" stroke="BLACK" strokeType="INSIDE" width="770.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#18191b" height="536.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="258.0" layoutY="17.0" text="ARTISANET" textFill="#eee9ed">
+         <font>
+            <Font name="Forte" size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="251.0" layoutY="201.0" text="Nom Categorie">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="251.0" layoutY="155.0" text="Id Categorie">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <TextField fx:id="tfid" disable="true" layoutX="409.0" layoutY="150.0" />
+      <TextField fx:id="tfnom" layoutX="409.0" layoutY="196.0" />
+      <Button layoutX="21.0" layoutY="154.0" mnemonicParsing="false" onAction="#ajouterCat" prefHeight="44.0" prefWidth="120.0" text="Ajouter" textFill="#258d25">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="305.0" layoutY="91.0" text="Gestion des Categorie">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="20.0" layoutY="288.0" mnemonicParsing="false" onAction="#SupprimerCat" text="Supprimer" textFill="#e81010">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="21.0" layoutY="222.0" mnemonicParsing="false" onAction="#modifierCat" prefHeight="44.0" prefWidth="120.0" text="Modifier" textFill="#b5a422">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <TableView fx:id="table1" layoutX="200.0" layoutY="290.0" prefHeight="244.0" prefWidth="295.0">
+        <columns>
+          <TableColumn fx:id="id_cat" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="nom_cat" prefWidth="181.0" text="Nom Categorie" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="58.0" fitWidth="55.0" layoutX="11.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/forum-des-personnes-utilisateurs-icone-3717-128.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="fxBack" layoutX="700.0" layoutY="12.0" mnemonicParsing="false" onAction="#back">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/deconnectez-vous-mon-profil-icone-5679-48.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

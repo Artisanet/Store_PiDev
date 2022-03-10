@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Artisanet.gui.GestionProduitAController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="-1.0" layoutY="-1.0" prefHeight="596.0" prefWidth="935.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@gestionproduitv.css" />
+         </stylesheets>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c31a07" height="596.0" stroke="BLACK" strokeType="INSIDE" width="935.0" />
+            <Label layoutX="79.0" layoutY="8.0" text="ARTISANET" textFill="#eee9ed">
+               <font>
+                  <Font name="Forte" size="45.0" />
+               </font>
+            </Label>
+            <Button fx:id="fxBack" layoutX="876.0" layoutY="7.0" mnemonicParsing="false" onAction="#back">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/deconnectez-vous-mon-profil-icone-5679-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="450.0" layoutY="34.0" text="Gestion de produit">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <TableView fx:id="table" layoutX="139.0" layoutY="109.0" onMouseClicked="#handleMouseAction" prefHeight="411.0" prefWidth="763.0">
+               <columns>
+                  <TableColumn fx:id="id_produit" prefWidth="87.0" text="ID produit" />
+                  <TableColumn fx:id="image_produit" prefWidth="172.0" text="Image" />
+                  <TableColumn fx:id="nom_produit" prefWidth="173.0" text="Nom" />
+                  <TableColumn fx:id="prix_produit" prefWidth="162.0" text="Prix" />
+                  <TableColumn fx:id="cat_produit" prefWidth="168.0" text="Categorie" />
+               </columns>
+            </TableView>
+            <ImageView fitHeight="58.0" fitWidth="55.0" layoutX="4.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/forum-des-personnes-utilisateurs-icone-3717-128.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
