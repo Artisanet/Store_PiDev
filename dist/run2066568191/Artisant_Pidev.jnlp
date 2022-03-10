@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Artisant_Pidev.jnlp">
+  <information>
+    <title>Artisant_Pidev</title>
+    <vendor>ameni</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Artisant_Pidev.jar" size="87003" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\fontawesomefx-8.9.jar" size="571068" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.15-bin.jar" size="785998" download="eager" />
+    <jar href="lib\opencsv-4.1.jar" size="105568" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.esprit.gui.MainClass"  name="Artisant_Pidev" />
+  <update check="always"/>
+</jnlp>

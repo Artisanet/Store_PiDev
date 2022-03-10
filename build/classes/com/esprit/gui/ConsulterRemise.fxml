@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.gui.ConsulterRemiseController">
+   <children>
+      <TableView fx:id="table_remise" layoutX="177.0" layoutY="60.0" prefHeight="288.0" prefWidth="474.0">
+        <columns>
+          <TableColumn fx:id="id_remise" prefWidth="84.00006103515625" text="Id remise" />
+          <TableColumn fx:id="numero_produit" prefWidth="107.19999694824219" text="Numero produit" />
+            <TableColumn fx:id="pourcentage" prefWidth="88.79998779296875" text="Pourcentage" />
+            <TableColumn fx:id="ancien_prix" prefWidth="87.2000732421875" text="Ancien Prix" />
+            <TableColumn fx:id="nouveau_prix" prefWidth="103.20001220703125" text="nouveau Prix" />
+        </columns>
+      </TableView>
+      <Pane layoutX="-47.0" prefHeight="479.0" prefWidth="200.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#57ff6a7a" height="479.0" layoutX="31.0" stroke="TRANSPARENT" strokeType="INSIDE" width="172.0" />
+            <Label layoutX="92.0" layoutY="303.0" prefHeight="23.0" prefWidth="74.0" text="username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="288.0" fitWidth="112.0" layoutX="75.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Desktop/3A22/semestre%202/java/Bookstore-207ed1e4f641062cb9100852e2f9f5bfb83039c7/src/bookstore/images/btcLogo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="188.0" layoutY="391.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" text="Ajouter Remise">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="341.0" layoutY="391.0" mnemonicParsing="false" text="Supprimer Remise">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button defaultButton="true" layoutX="506.0" layoutY="391.0" mnemonicParsing="false" text="Consulter Remise">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="322.0" layoutY="14.0" text="Consulter Remise">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
